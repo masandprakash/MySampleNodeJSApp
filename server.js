@@ -17,6 +17,7 @@ const app = express();
 
 app.locals.siteName = 'ROUX Academy';
 
+
 const port = process.env.PORT || 3000;
 
 app.set('trust proxy', 1);
