@@ -15,7 +15,7 @@ const routes = require('./routes');
 
 const app = express();
 
-app.locals.siteName = 'ROUX Academy';
+app.locals.siteName = 'Human Resources groups | Meetup';
 
 
 const port = process.env.PORT || 3000;
