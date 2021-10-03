@@ -27,7 +27,7 @@
             Speakers
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/speakers">All Speakers</a>
+            <a class="dropdown-item" href="/employees">All Employees</a>
             <div class="dropdown-divider"></div>
 
             <% speakerNames.forEach(function (speaker) {%>
@@ -38,5 +38,13 @@
         <li class="nav-item"><a href="/feedback" class="nav-link">Feedback</a></li>
       </ul>
     </div>
+    <div class="btn-group ml-auto dropleft">
+      <% if (isAuthenticated) { %>
+          <a class="btn btn-secondary" href="/id" role="button">ID</a>
+          <a class="btn btn-success" href="/signout" role="button">Sign-out</a>
+      <% } else { %>
+          <a class="btn btn-secondary" href="/signin" role="button">Sign-in</a>
+      <% } %>
   </div>
+</div>
 </nav>
